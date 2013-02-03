@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="12" tilewidth="40" tileheight="40">
+ <tileset firstgid="1" name="tiles" tilewidth="40" tileheight="40">
+  <image source="tiles.png" width="240" height="160"/>
+ </tileset>
+ <tileset firstgid="25" name="items" tilewidth="40" tileheight="40">
+  <image source="items.png" width="240" height="160"/>
+ </tileset>
+ <layer name="distant" width="50" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgcgBWI2Qio4QZiHirYRS1zaAUEgViITmaREhbExNEoGAWjYBSMglEwChgYAAPDAKI=
+  </data>
+ </layer>
+ <layer name="bkg" width="50" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUgID4QDuASoCdCmYQExa0Di9eKphBTFhQI7zwAWL9gS88iTGDGuFFDfPxhSet/EFKWiTWfHzqaOUPUtLiYPYHKXqGsz8A24gBtQ==
+  </data>
+ </layer>
+ <layer name="gfx" width="50" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMBiBGIX6RbCIiWIR44RiZiiNDSDro9Rdo2AUjAQAANYnAIk=
+  </data>
+ </layer>
+ <layer name="block" width="50" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIKRBVhIUEes2oEAA+0PDjwYnzpS9JNrBylmjYJRQAsAAKetAUk=
+  </data>
+ </layer>
+ <objectgroup name="objects" width="50" height="12">
+  <object gid="45" x="320" y="280"/>
+  <object gid="39" x="520" y="320"/>
+  <object gid="39" x="1080" y="320"/>
+  <object gid="45" x="1440" y="280"/>
+  <object gid="45" x="1480" y="280"/>
+  <object gid="45" x="1520" y="280"/>
+  <object gid="45" x="1560" y="280"/>
+  <object gid="45" x="1600" y="280"/>
+  <object gid="42" x="920" y="280"/>
+  <object gid="42" x="600" y="280"/>
+  <object gid="25" x="120" y="320"/>
+  <object gid="46" x="760" y="320"/>
+  <object x="600" y="280">
+   <polyline points="0,0 -240,0"/>
+  </object>
+  <object x="520" y="320">
+   <polyline points="0,0 -120,0"/>
+  </object>
+  <object x="920" y="280">
+   <polyline points="0,0 -40,0 -120,-80 -200,-80"/>
+  </object>
+  <object x="1080" y="320">
+   <polyline points="0,0 -80,0"/>
+  </object>
+  <object gid="39" x="1240" y="320"/>
+  <object x="1240" y="320">
+   <polyline points="0,0 -40,0"/>
+  </object>
+  <object gid="47" x="280" y="360"/>
+  <object gid="47" x="320" y="360"/>
+  <object gid="47" x="360" y="360"/>
+  <object gid="48" x="0" y="240"/>
+  <object gid="48" x="40" y="240"/>
+  <object gid="48" x="80" y="240"/>
+ </objectgroup>
+</map>
