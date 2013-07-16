@@ -12,8 +12,8 @@ import org.flixel.FlxState;
 import org.flixel.FlxText;
 import org.flixel.FlxU;
 
-import org.flixel.system.input.TouchManager;
-import org.flixel.system.input.Touch;
+import org.flixel.system.input.FlxTouchManager;
+import org.flixel.system.input.FlxTouch;
 
 class DeadState extends FlxState
 {
@@ -29,7 +29,7 @@ class DeadState extends FlxState
 		//FlxG.mouse.show();
 		#end
 		
-		var text : FlxText = new FlxText(0, 150, Game.Width, "You Died!");
+		var text : FlxText = new FlxText(0, 150, Game.Width, "You Died!", 20);
 		
 		text.alignment = "center";
 		add(text);
@@ -40,7 +40,7 @@ class DeadState extends FlxState
 		#else
 		"Hit space to play again"
 		#end
-		, true);
+		, 12);
 		
 		text.alignment = "center";
 		
@@ -63,7 +63,7 @@ class DeadState extends FlxState
 			next = true;
 		}
 		
-		var touch:Touch;
+		var touch:FlxTouch;
 		for (touch in FlxG.touchManager.touches)
 		{
 			if (touch.justPressed())

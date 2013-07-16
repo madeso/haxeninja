@@ -12,8 +12,8 @@ import org.flixel.FlxState;
 import org.flixel.FlxText;
 import org.flixel.FlxU;
 
-import org.flixel.system.input.TouchManager;
-import org.flixel.system.input.Touch;
+import org.flixel.system.input.FlxTouchManager;
+import org.flixel.system.input.FlxTouch;
 
 class MenuState extends FlxState
 {
@@ -35,7 +35,7 @@ class MenuState extends FlxState
 		#else
 		"Hit space to start"
 		#end
-		, true);
+		, 12);
 		
 		text.alignment = "center";
 		
@@ -58,7 +58,7 @@ class MenuState extends FlxState
 			next = true;
 		}
 		
-		var touch:Touch;
+		var touch:FlxTouch;
 		for (touch in FlxG.touchManager.touches)
 		{
 			if (touch.justPressed())

@@ -2,8 +2,8 @@ package ;
 
 import org.flixel.FlxG;
 import org.flixel.FlxPoint;
-import org.flixel.system.input.TouchManager;
-import org.flixel.system.input.Touch;
+import org.flixel.system.input.FlxTouchManager;
+import org.flixel.system.input.FlxTouch;
 
 /**
  * ...
